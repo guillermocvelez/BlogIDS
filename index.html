@@ -136,11 +136,30 @@
 
     <!-- -------MODAL CONTAINER------------ -->
 
-  <div class="modal">
+  <div id="modal" class="modal hide">
+    
+    <div class="flex-container">
 
-    <div class="modal-container">
       
-    </div>
+      <form class="modal-container">
+        
+        <h1>Regístrate para más artículos</h1>
+        <div class="row">
+          <input type="text" name="name"  autocomplete="off" placeholder="Nombre">
+          
+        <input type="text" placeholder="Apellido">
+      </div>
+        <div class="row"><input type="email" name="email"  placeholder="email">
+        <input type="password" name="password"  placeholder="password">
+      </div>
+
+      <input id="input-submit" type="submit" value="Enviar" class="">
+
+      
+        <button class="closeBtn">cerrar</button>
+   
+    </form>
+  </div>
 
     
   </div>

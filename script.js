@@ -65,7 +65,6 @@ const buscar = document.getElementById('buscar');
 console.log(buscar);
 
 buscar.addEventListener('keyup',function(){
-
     let valor = buscar.value.toLowerCase().trim();
     //console.log(valor);
     const items = document.querySelectorAll('.store-item');
@@ -82,9 +81,25 @@ buscar.addEventListener('keyup',function(){
         }
     })
 })
+})();
 
+(function(){
+   const registro = document.getElementById('registry');
+   const modal = document.getElementById('modal');
+   const cerrar = document.getElementsByClassName('closeBtn');
 
+   registro.addEventListener('click',function(event){
+    event.preventDefault();
+    
+    modal.classList.remove('hide');
+   });
 
+   cerrar.addEventListener('click',function(event){
+       event.preventDefault();
+    modal.classList.add('hide');
+
+   });
+    
 })();
 
 
